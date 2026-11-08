@@ -1,0 +1,52 @@
+/* Site_10K: decision observatory. Progressive enhancement of the existing portfolio. */
+body.site10k{--signal:#c0a2f3;--edge:#675080;--surface:#14111e;--signal-soft:#bc8cf320}
+html[data-theme=light] body.site10k{--signal:#076f7b;--edge:#8abfc5;--surface:#f5fbfa;--signal-soft:#087f8b15}
+.site10k .hero{background:radial-gradient(ellipse at 78% 20%,var(--signal-soft),transparent 64%);padding-top:72px}
+.site10k .hero-stage{gap:54px;align-items:center}
+.site10k .hero h1{font-size:clamp(46px,5.7vw,82px);line-height:1.03;letter-spacing:-.065em}
+.site10k .hero h1 em{color:var(--signal)}
+.site10k .hero .lede{font-size:16px;max-width:480px;line-height:1.85}
+.site10k .top{border-bottom-color:var(--edge)}
+.site10k .brandmark{border:1px solid var(--edge);border-radius:50%}
+.site10k .journey-frame{height:610px;border:1px solid var(--edge);border-radius:20px;background:var(--surface);box-shadow:0 22px 65px #00000026}
+.site10k .journey-frame:after{background:radial-gradient(circle 200px at var(--mx) var(--my),var(--signal-soft),transparent 75%)}
+.site10k .journey-track{inset:335px 16px 52px;gap:7px}
+.site10k .journey-node{border-radius:10px;padding:16px 10px;min-width:0;background:transparent}
+.site10k .journey-node.active,.site10k .journey-node:hover,.site10k .journey-node:focus-visible{background:var(--signal-soft);border-color:var(--signal);box-shadow:none;transform:translateY(-3px)}
+.site10k .journey-title{font-size:14px;line-height:1.35}
+.site10k .journey-index{font-size:8px;color:var(--signal)}
+.site10k .journey-graphic{height:50px;margin-bottom:12px;transform:scale(.6);transform-origin:left center}
+.site10k .journey-node.active .journey-graphic,.site10k .journey-node:hover .journey-graphic{transform:scale(.7)}
+.site10k .journey-detail{font-size:10px;line-height:1.5}
+.site10k .flow-top{font-size:9px;color:var(--signal);padding:20px}
+.site10k .flow-top>span:last-child{display:none}
+.site10k .flow-controls{display:none}
+.site10k .flow-description{min-height:94px;padding:20px 0 12px;border-bottom:0}
+.site10k .flow-description strong{color:var(--signal)}
+.site10k .flow-next{padding-top:14px}
+.site10k .flow-next button{min-height:44px}
+.site10k .flow-state{font-size:9px;color:var(--signal)}
+.site10k .flow-progress{background:var(--signal-soft)}
+.site10k .flow-progress i{background:var(--signal)}
+.observatory{position:absolute;inset:38px 12px auto;height:290px;pointer-events:none;z-index:2;color:var(--signal);overflow:hidden}
+.observatory svg{display:block;width:100%;height:100%;overflow:visible;transform:translate(var(--orbit-x,0px),var(--orbit-y,0px));transition:transform .35s ease-out}
+.observatory .orbit{fill:none;stroke:currentColor;stroke-width:.7;opacity:.35}
+.observatory .orbit-dash{stroke-dasharray:2 8;opacity:.6}
+.observatory .core{fill:var(--surface);stroke:currentColor;stroke-width:1.4}
+.observatory .link{stroke:currentColor;stroke-width:.7;opacity:.15}
+.observatory .datum{fill:currentColor;transition:cx .65s ease,cy .65s ease,opacity .5s,r .5s}
+.observatory .core-label{fill:currentColor;font:500 17px 'DM Mono',monospace;text-anchor:middle;letter-spacing:3px}
+.observatory .core-number{fill:currentColor;font:500 10px 'DM Mono',monospace;text-anchor:middle;opacity:.65}
+.site10k .card,.site10k .info-card,.site10k .skill-group{border-radius:16px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.site10k .card:hover,.site10k .card:focus-within{transform:translateY(-5px);border-color:var(--signal);box-shadow:0 16px 45px #00000022}
+.site10k .feature-strip{gap:16px}
+.site10k .feature-strip a{border:1px solid var(--edge);border-radius:12px;padding:26px}
+.site10k .feature-strip a:hover{background:var(--signal-soft)}
+.site10k .pagehead{border-bottom:1px solid var(--edge);background:radial-gradient(ellipse at 90% 50%,var(--signal-soft),transparent 65%)}
+.site10k .story-grid{border-radius:18px}
+.site10k :is(a,button):focus-visible{outline:3px solid var(--signal);outline-offset:5px}
+.site10k .language-control button,.site10k .menu,.site10k .theme-toggle{min-height:44px}
+@media(min-width:1000px){.site10k .hero-stage{display:grid;grid-template-columns:.92fr 1.08fr}.site10k .hero-copy{padding-right:0}}
+@media(max-width:999px){.site10k .hero-stage{display:block}.site10k .hero-copy{max-width:680px;margin-bottom:38px}.site10k .hero .lede{max-width:600px}.site10k .hero h1{font-size:clamp(48px,9vw,80px)}}
+@media(max-width:520px){.site10k .hero{padding-top:42px}.site10k .journey-frame{height:710px;border-radius:14px}.observatory{height:245px;inset:42px 0 auto}.site10k .journey-track{inset:292px 12px 52px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px}.site10k .journey-node{padding:14px}.site10k .journey-title{font-size:15px}.site10k .journey-detail{font-size:11px}.site10k .journey-graphic{position:absolute;right:5px;top:22px;transform:scale(.5);transform-origin:right top}.site10k .journey-node.active .journey-graphic{transform:scale(.55)}.site10k .flow-next>span{max-width:50%;font-size:9px}.site10k .hero-foot{margin-top:28px}.site10k .feature-strip{display:grid;grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.site10k *,.site10k *:before,.site10k *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.observatory svg{transform:none!important}.site10k .card:hover,.site10k .journey-node:hover,.site10k .journey-node.active{transform:none}}
